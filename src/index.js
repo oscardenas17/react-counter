@@ -10,4 +10,5 @@ const divRoot = document.querySelector('#app');
 // console.log(divRoot);
 
 reactDom.render
-( <PrimeraApp  saludo={123} />,divRoot);
+( <PrimeraApp  />,divRoot);
+// ( <PrimeraApp  saludo={hola soy goku por props} />,divRoot);
