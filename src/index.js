@@ -10,4 +10,4 @@ const divRoot = document.querySelector('#app');
 // console.log(divRoot);
 
 reactDom.render
-( <PrimeraApp />,divRoot);
+( <PrimeraApp  saludo={123} />,divRoot);
