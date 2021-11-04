@@ -1,17 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-const CounterApp  = ( {} ) => {
+const CounterApp  = ( {contador} ) => {
     return (
         <>
-            <div></div>
+            <h1>Counter App</h1>
+            <h2>{contador}</h2>
         </>
 
     )
 }
 
 CounterApp.propTypes = {
-    saludo : PropTypes.number.isRequired
+    contador : PropTypes.number
  }
  
 //  PrimeraApp.defaultProps = {

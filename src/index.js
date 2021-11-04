@@ -13,5 +13,5 @@ const divRoot = document.querySelector('#app');
 
 reactDom.render
 // ( <PrimeraApp  />,divRoot);
-( <CounterApp  />,divRoot);
+( <CounterApp  contador = {10} />,divRoot);
 // ( <PrimeraApp  saludo={hola soy goku por props} />,divRoot);
