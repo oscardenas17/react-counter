@@ -8,10 +8,20 @@ const CounterApp  = ( {contador} ) => {
     // handleAdd
     const handleAdd = ()=> {
         setCounter (counter + 1);
-        //setCounter ( (c)=> c+1 );
+        //setCounter ( (c)=> c+1 )
+
     }
     
-    
+    const handleReset = ()=> {
+        
+        setCounter ( (c)=> contador)
+    }
+
+    const handleSubstract = ()=> {
+        setCounter (counter - 1);
+        //setCounter ( (c)=> c+1 )
+
+    }
     return (
         <>
             <h1>Counter App</h1>
@@ -20,6 +30,8 @@ const CounterApp  = ( {contador} ) => {
             {/* <button onClick={ (e) => {handleAdd(e) } }> +1 </button> */}
             <button onClick={ handleAdd }> +1 </button>
             {/* funcion de fecla donde e es enviado como primer argumento al haddleadd s */}
+            <button onClick={ handleReset }> Reset </button>
+            <button onClick={ handleSubstract }> -1 </button>    
         </>
 
     )
