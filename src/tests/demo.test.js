@@ -18,3 +18,4 @@ describe('Pruebas en el archivo demo.test.js', ()=> {
 
 });
 
+// npm run test
