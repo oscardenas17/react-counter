@@ -34,8 +34,7 @@ describe('Pruebas en fnunciones de Héroes', () => {
     const heroesData = heroes.filter( h=>h.owner === owner);
 
     expect(heroes).toEqual(heroesData);
-  })
-  
+  }) 
 
 
   //debe retornar arregl con los heroes de marvel
@@ -44,7 +43,6 @@ describe('Pruebas en fnunciones de Héroes', () => {
     const owner = 'Marvel';
     const heroes = getHeroesByOwner(owner);
 
- 
 
     expect(heroes.length).toBe(2);
   })
