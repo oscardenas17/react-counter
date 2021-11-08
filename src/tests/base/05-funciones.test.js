@@ -4,7 +4,7 @@ import { getUser, getUsuarioActivo } from "../../base/05-funciones"
 
 describe('Pruebas en 05 funciones', () => {
 
-    test('getUser debe retornar un objeto ', () => {
+    test('getUser debe retornar un objeto', () => {
     
     const userTest = {
         uid: 'ABC123',
@@ -17,7 +17,7 @@ describe('Pruebas en 05 funciones', () => {
 
     })
 
-    test('Get user retorna un objeto con nombre por parametro ', () => {
+    test('Get user retorna un objeto con nombre por parametro', () => {
         
         const nombre = 'Yesid';
         const userActivo ={
