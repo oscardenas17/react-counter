@@ -12,7 +12,7 @@ describe('Pruebas con promesas', () => {
        
         const id = 1;
 
-        getHeroeByIdAsync (id)
+        getHeroeByIdAsync(id)
             .then( heroe => {
                 expect (heroe).toBe(heroes[0]);
                 done();
@@ -26,7 +26,8 @@ describe('Pruebas con promesas', () => {
         const id = 11;
         getHeroeByIdAsync(id)
           .catch( error => {
-                expect(error).toBe('No se pudo encontrar el heroe');
+
+                expect ( error ).toBe('No se pudo encontrar el heroe');
                 done();
 
       });
