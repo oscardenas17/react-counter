@@ -1,10 +1,10 @@
 import '@testing-library/jest-dom'
 
-import { getSaludo } from "../../base/02-template-string.js";
+import { getSaludo } from "../base/02-template-string.js";
 
 describe ('Pruebas en 02-template-string',   ()=> {
 
-    test('prueba en el método getSaludo ', () => {
+    test('prueba en el método getSaludo', () => {
         
         const nombre = 'Yesid';
 
@@ -14,7 +14,7 @@ describe ('Pruebas en 02-template-string',   ()=> {
     })
 
     //gestsaludo debe retonrar hola goku si no hay argumento pasdo en var nombre
-    test('muestra hola Goku si no se envia argumento ', () => {
+    test('muestra hola Goku si no se envia argumento', () => {
         
 
         const saludo = getSaludo( );
