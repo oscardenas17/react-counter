@@ -11,3 +11,15 @@ exports[`Pruebas en <PrimeraApp/> Debe de mostrar <PrimeraApp /> correctamente 1
   </p>
 </Fragment>
 `;
+
+exports[`Pruebas en <PrimeraApp/> Debe de mostrar el subtitulo enviado por props 1`] = `
+<Fragment>
+  <h1>
+     
+    hola tu de yo
+  </h1>
+  <p>
+    Soy un subtitulo props
+  </p>
+</Fragment>
+`;
