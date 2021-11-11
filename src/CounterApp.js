@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types'
 
-const CounterApp  = ( {contador} ) => {
+const CounterApp  = ( {contador = 0} ) => {
 
     const [counter, setCounter] = useState(0);
     
