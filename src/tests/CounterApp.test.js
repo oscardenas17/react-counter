@@ -43,13 +43,22 @@ describe('Pruebas en <CounterApp/>', () =>{
 
 
     test('debe decrementar con el botón -1', () => {
-        
-        // const wrapper = shallow ( <CounterApp /> )
+         // const wrapper = shallow ( <CounterApp /> )
         wrapper.find('button').at(2).simulate('click');
         const counterText = wrapper.find('h2').text().trim(); 
         expect(counterText).toBe('-1');
 
     })
+
+    test('debe resetear el valor con el botón reset', () => {
+        // const wrapper = shallow ( <CounterApp /> )
+        const wrapper = shallow ( <CounterApp value= {105} /> );
+        wrapper.find('button').at(0).simulate('click');
+        wrapper.find('button').at(1).simulate('click');
+        const counterText = wrapper.find('h2').text().trim(); 
+
+        expect(counterText).toBe('105');
+   })
     
         
 })
