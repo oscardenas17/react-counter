@@ -9,19 +9,16 @@ import CounterApp from "../CounterApp";
 
 describe('Pruebas en <CounterApp/>', () =>{
 
-    // test('Debe mostrar el mensaje "Hola tu"', () => {
-        
-    //     const saludo = 'Hola tu';
+    // const wrapper = shallow ( <CounterApp /> )
 
-    //     const {getByText} = render(<PrimeraApp saludo={saludo} />)
-
-    //     // wrapper.getByText
-    //     expect(getByText (saludo) ).toBeInTheDocument();
-    // })
+    let wrapper = shallow ( <CounterApp /> );
+    beforeEach(  ()=>{
+        wrapper = shallow ( <CounterApp /> )
+    });
 
     test('Debe de mostrar <CounterApp /> correctamente', () => {
 
-        const wrapper = shallow ( <CounterApp /> )
+        // const wrapper = shallow ( <CounterApp /> )
 
         expect (wrapper).toMatchSnapshot();
     })
@@ -34,5 +31,25 @@ describe('Pruebas en <CounterApp/>', () =>{
 
         expect (counterText).toBe('100');
     })
+
+    test('debe incrementar con el botón +1', () => {
+        
+        // const wrapper = shallow ( <CounterApp /> )
+        wrapper.find('button').at(0).simulate('click');
+        const counterText = wrapper.find('h2').text().trim(); 
+        expect(counterText).toBe('1');
+
+    })
+
+
+    test('debe decrementar con el botón -1', () => {
+        
+        // const wrapper = shallow ( <CounterApp /> )
+        wrapper.find('button').at(2).simulate('click');
+        const counterText = wrapper.find('h2').text().trim(); 
+        expect(counterText).toBe('-1');
+
+    })
+    
         
 })
